@@ -1,0 +1,11 @@
+sample_sheet: "/Path/to/sample.csv"     # CSV with columns: barcode,sample_id
+raw_dir:      "/Path/to/barcode/directory"           # dir of per-barcode FASTQ/FASTQ.GZ
+threads:      16
+quality:      10
+min_length:   1000
+assembler:    "flye"            # or "canu"
+genome_size:  "5m"              # for canu
+medaka_model: "r941_prom_sup_g507"
+# full absolute path to the directory where your MOB-Suite DBs live
+mob_db_dir:  "/Path/to/database/directory/"
+
