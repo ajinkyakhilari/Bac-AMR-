@@ -171,7 +171,7 @@ snakemake \
 
 ```Coverage depth is computed and plotted by scripts/depth_plot.py. The PNGs are saved in depth/plots.```
 
-Contact
+### Contact
 
 For issues or questions, please open an issue on GitHub or contact the maintainers.
 
