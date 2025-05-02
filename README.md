@@ -127,7 +127,7 @@ snakemake --cores 16 --use-conda
 
 This will consume all samples defined in config.yaml and produce outputs in ```raw/```, ```filtered/```, ```assembly/```, ```polished/```, ```mapping/```, ```depth/```, ```rgi/```,``` plasmids/```, and ```quast/```
 
-### Customizing on the fly
+#### Customizing on the fly
 
 You can override config parameters directly from the command line using ```--config``` For example:
 
@@ -154,7 +154,7 @@ snakemake -n --cores 16 --use-conda
 snakemake --dag | dot -Tpdf > dag.pdf
 ```
 
-### Running from a different directory
+#### Running from a different directory
 
 If you’re outside the project folder, specify both the Snakefile and config file:
 
@@ -167,11 +167,11 @@ snakemake \
   --schedular greedy
 ```
 
-### Depth Plotting
+#### Depth Plotting
 
 ```Coverage depth is computed and plotted by scripts/depth_plot.py. The PNGs are saved in depth/plots.```
 
-### Contact
+#### Contact
 
 For issues or questions, please open an issue on GitHub or contact the maintainers.
 
