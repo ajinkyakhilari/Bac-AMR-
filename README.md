@@ -2,6 +2,10 @@
 The Bacterial Whole Genome Analysis Pipeline 
 This repository contains a Snakemake-based pipeline for assembly, polishing, annotation, and plasmid reconstruction of nanopore-sequenced bacterial isolates.
 
+### Pipeline Overview
+
+At a high level, the Bac‑AMR pipeline automates the end‑to‑end processing of nanopore‑sequenced bacterial isolates. Starting from raw per‑barcode FASTQ files, it performs quality filtering (fastp), de novo assembly (Flye or Canu), consensus polishing (Medaka), read mapping and coverage calculation (minimap2 + samtools), antimicrobial resistance gene identification (RGI with the CARD database), plasmid reconstruction (MOB‑suite), and final assembly metrics reporting (QUAST). Each step is encapsulated in a Snakemake rule with its own Conda environment, ensuring reproducibility and scalable parallel execution.
+
 ## Directory Structure
 
 ```bash
